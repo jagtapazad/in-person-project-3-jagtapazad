@@ -46,8 +46,43 @@
             <p>Let's work together!</p>
             
             <form class="contact-form">
-                <!-- TODO: Add HTML5 form inputs here -->
-                <!-- Students will add various input types during class -->
+                <!-- Phase 3.1: HTML5 input types -->
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone">
+
+                <label for="start-date">Preferred Start Date:</label>
+                <input type="date" id="start-date" name="start-date">
+
+                <label for="budget">Budget (USD):</label>
+                <input type="number" id="budget" name="budget" min="0" step="100">
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <!-- Phase 3.2: Radio buttons and checkboxes -->
+                <fieldset>
+                    <legend>Preferred Contact Method:</legend>
+                    <input type="radio" id="contact-email" name="contact" value="email">
+                    <label for="contact-email">Email</label>
+                    <input type="radio" id="contact-phone" name="contact" value="phone">
+                    <label for="contact-phone">Phone</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Project Timeline:</legend>
+                    <input type="checkbox" id="asap" name="timeline" value="asap">
+                    <label for="asap">ASAP</label>
+                    <input type="checkbox" id="flexible" name="timeline" value="flexible">
+                    <label for="flexible">Flexible</label>
+                </fieldset>
+
+                <button type="submit">Send Message</button>
             </form>
         </section>
     </main>
